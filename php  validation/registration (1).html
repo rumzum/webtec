@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Form Validation</title>
+</head>
+<body>
+
+<h1>Registration form</h1>
+<form action="RegistrationAction.php" method="post" novalidate>
+  <fieldset>
+    <legend>Basic Information</legend>
+    <label for="fname">Enter your first name:</label>
+    <input type="text" id="fname" name="fname"><br><br>   
+    <label for="lname">Enter your Last name:</label>
+    <input type="text" id="lname" name="lname"><br><br>
+    <label for="gender">Gender :</label>
+    <input type="radio" name="gender" value="male">
+    <label for="Male">Male</label>
+    <input type="radio" name="gender" value="female">
+    <label for="Female">Female</label><br><br>  
+    <label for="DOB">Date of birth:</label>
+    <input type="date" id="dob" name="dob"><br><br>
+    <label for="religion">Choose your Religion:</label>
+    <select name="religion" id="religion">
+    <option></option>
+    <option value="Muslim">Muslim</option>
+    <option value="Hindu">Hindu</option>
+    <option value="Christian">Christian</option>
+    </select>
+    <br><br>
+  </fieldset>
+  <fieldset>
+    <legend>Contact Information</legend>
+    <label for="Praddress">Enter your Present Address:</label>
+    <textarea name="Praddress" rows="3" cols="30"></textarea><br><br>
+    <label for="Peaddress">Enter your Permanent Address:</label>
+    <textarea name="Peaddress" rows="3" cols="30"></textarea><br><br>
+    <label for="phone">Enter your phone number:</label>
+    <input type="tel" id="phone" name="phone" ><br><br>
+    <label for="email">Enter your Email:</label>
+    <input type="email" id="email" name="email"><br><br>
+
+    <label for="Web">Enter your Personal Website link:</label>
+    <input type="url" id="Web" name="Web"><br>
+  </fieldset>
+    <fieldset>
+    <legend>Credentials</legend>
+    <label for="username">Enter your Username:</label>
+    <input type="text" id="username" name="username" maxlength="5"><br><br>
+    <label for="password">Enter your Password:</label>
+    <input type="password" id="password" name="password"><br><br>
+    <label for="cpassword">Enter Confirm Password:</label>
+    <input type="cpassword" id="cpassword" name="cpassword"><br><br>
+  </fieldset>
+  <br><br><input type="submit" value="Submit"><br><br><br><br>
+</form>
+</body>
+</html>
